@@ -101,7 +101,7 @@ section {
 }
 
 .underlined {
-    text-decoration: solid;
+    text-decoration: underline;
 }
 
 #renntag ul {
