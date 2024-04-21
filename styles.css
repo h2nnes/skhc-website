@@ -102,6 +102,7 @@ section {
 
 .underlined {
     text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #renntag ul {
