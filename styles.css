@@ -97,7 +97,8 @@ section {
 .drop-shadow {
     -webkit-filter: drop-shadow(0 0 8px white);
     filter: drop-shadow(0 0 8px white);
-
+    position: relative;
+    z-index: -3;
 }
 
 .underlined {
