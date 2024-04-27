@@ -56,9 +56,15 @@ footer {
 
 .info-jubelfeier {
     text-align: center;
-    margin: 20px 0;
-    font-family: 'Fungal-Grow1000';
-    font-size: 2em;
+    margin: 0px 0;
+    font-family: monospace;
+    font-size: 1em;
+}
+
+.infos-jubelfeier {
+    margin: 100px 0;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+
 }
 
 img {
@@ -159,6 +165,10 @@ nav a svg,
 img {
     vertical-align: middle;
     /* align svg, img elements within <a> element */
+}
+
+.intro-img {
+    margin: 50px 0;
 }
 
 
@@ -341,8 +351,120 @@ img {
     }
 }
 
-@media(max-width: 400px) {
-    .sidebar {
-        width: 100%;
+
+/* tablet styles */
+@media(min-width: 960px) {}
+
+/* desktop styles */
+@media(min-width: 1200px) {
+    .intro-img {
+        overflow: visible;
+        display: block;
+        width: 1000px;
+        height: auto;
+        margin: 0px auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .block-text {
+        padding: 40px 200px;
+    }
+
+    .plaketten {
+        padding: 40px 200px;
+    }
+
+    .tuevplakette {
+        background-color: #fafafa;
+        color: #000000;
+        border-radius: 20px;
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .sponsoren-img {
+        overflow: visible;
+        display: block;
+        width: 600px;
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .credits-kids {
+
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .plaketten ul {
+        margin: auto;
+        text-align: center;
+    }
+
+    .plaketten p {
+        margin: 2px 0;
+    }
+
+    .block-text {
+        padding: 0 400px;
+    }
+
+    h2 {
+        margin: 15px 650px;
+        text-align: center;
+    }
+
+    #sponsoren p {
+        padding: 0 400px;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    section {
+        margin: 180px 0;
+    }
+
+    .navbar {
+        font-family: monospace;
+    }
+
+    .navbar a {
+        text-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    .navbar li a[href="#about"]:hover {
+        color: greenyellow;
+        font-family: monospace;
+        font-size: 1.55em;
+    }
+
+    .navbar li a[href="#renntag"]:hover {
+        color: yellow;
+        font-family: monospace;
+        font-size: 1.55em;
+    }
+
+    .navbar li a[href="#workshop"]:hover {
+        color: rgb(132, 128, 255);
+        font-family: monospace;
+        font-size: 1.55em;
+    }
+
+    .navbar li a[href="#jubelfeier"]:hover {
+        color: deeppink;
+        font-family: monospace;
+        font-size: 1.55em;
+    }
+
+    .navbar li a[href="#sponsoren"]:hover {
+        color: orange;
+        font-family: monospace;
+        font-size: 1.55em;
     }
 }
