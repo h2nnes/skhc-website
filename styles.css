@@ -401,7 +401,7 @@ img {
     background-color: white;
 }
 
-@keyframes one {
+@-webkit-keyframes one {
     0% {
         left: 0px;
         top: 0px;
@@ -428,7 +428,7 @@ img {
     }
 }
 
-@keyframes two {
+@-webkit-keyframes two {
     0% {
         left: 0px;
         top: 0px;
