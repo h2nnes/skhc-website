@@ -392,9 +392,9 @@ img {
 }
 
 .animation-bg {
+    z-index: -2;
     top: 0;
     left: 0;
-    z-index: -2;
 }
 
 .bg-shape1 {
@@ -402,7 +402,7 @@ img {
     height: 200px;
     border-radius: 9999px;
     position: relative;
-    animation: one 8s infinite;
+    animation: one 10s infinite;
 }
 
 .bg-shape2 {
@@ -410,7 +410,7 @@ img {
     height: 200px;
     border-radius: 9999px;
     position: relative;
-    animation: two 8s infinite;
+    animation: two 10s infinite;
 }
 
 .opacity-50 {
@@ -424,7 +424,7 @@ img {
 }
 
 .bg-primary {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .bg-teal {
@@ -437,28 +437,26 @@ img {
 
 @keyframes one {
     0% {
-        left: 0px;
-        top: 0px;
+        transform: translateX(0);
     }
 
     25% {
-        left: -100px;
-        top: 70px;
+        transform: translateX(30%) translateY(20%);
+
     }
 
     50% {
-        left: 20px;
-        top: 150px;
+        transform: translateX(50%) translateY(110%);
+
     }
 
     75% {
-        left: 50px;
-        top: 100px;
+        transform: translateX(-40%) translateY(80%);
+
     }
 
     100% {
-        left: 0px;
-        top: 0px;
+        transform: translateX(0) translateY(0);
     }
 }
 
@@ -491,28 +489,26 @@ img {
 
 @keyframes two {
     0% {
-        left: 0px;
-        top: 0px;
+        transform: translateY(100%);
     }
 
     25% {
-        left: 50px;
-        top: 10px;
+        transform: translateX(50%) translateY(-40%);
+
     }
 
     50% {
-        left: 100px;
-        top: 50px;
+        transform: translateX(-50%) translateY(0%);
+
     }
 
     75% {
-        left: 50px;
-        top: 100px;
+        transform: translateX(20%) translateY(40%);
+
     }
 
     100% {
-        left: 0px;
-        top: 0px;
+        transform: translateX(0) translateY(100%);
     }
 }
 
@@ -558,10 +554,18 @@ img {
 
 
 /* tablet styles */
-@media(min-width: 960px) {}
+@media(min-width: 960px) {
+    .container {
+        display: none;
+    }
+}
 
 /* desktop styles */
 @media(min-width: 1200px) {
+    .container {
+        display: none;
+    }
+
     .intro-img {
         overflow: visible;
         display: block;
