@@ -365,9 +365,9 @@ img {
 } */
 
 .container {
-    border: solid 2px red;
     position: relative;
     z-index: -1;
+    margin-top: 20px;
 }
 
 .image-container {
